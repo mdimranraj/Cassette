@@ -45,6 +45,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .left-side{
     width: 60vw;
     display: flex;
@@ -53,5 +54,7 @@
     
 }
 .right-side{
-    margin: 20px 0;
+
+    margin: 20px auto;
+
 }
