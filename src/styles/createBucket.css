@@ -1,0 +1,10 @@
+.create-bucket-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.create-bucket-form input{
+    height: 2rem;
+    width: 30vw;
+}

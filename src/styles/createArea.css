@@ -1,0 +1,14 @@
+.create-form{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+.plus{
+    margin: 20px auto;
+    width: 30px;
+    height: 30px;
+}
+.plus:hover{
+    width: 35px;
+    height: 35px;
+}

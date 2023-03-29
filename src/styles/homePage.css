@@ -1,0 +1,13 @@
+.home-page{
+    min-height: 60vh;
+}
+.top-buttons{
+    margin: 10px 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.top-buttons button {
+    margin: 10px 30px;
+}
