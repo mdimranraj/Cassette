@@ -18,9 +18,9 @@ const Developer = () => {
                     <div className='social-details'>
                         <h5>Follow me on :</h5>
                         <div>
-                        <a href="https://www.linkedin.com/in/md-imran-raj-952659201/" target='_blank'><img className='linkedIn-img' src='https://drive.google.com/uc?export=download&id=1fW7AugDk_OyfBbZYpes7wnhbLM-5Xdr5'></img></a>
-                        <a href='https://github.com/mdimranraj' target='_blank'><img src='https://drive.google.com/uc?export=download&id=16shR8sum3xnPdJchaag8k5229tvUj5qn' /></a>
-                        <a href='mailto:mdimranraj786@gmail.com' target='_blank'><img src='https://drive.google.com/uc?export=download&id=1oiAp5iqS67x17KAnaDO27uy8AINmu0z1' /></a>
+                        <a href="https://www.linkedin.com/in/md-imran-raj-952659201/" target='_blank'><img className='linkedIn-img' src='https://drive.google.com/uc?export=download&id=1fW7AugDk_OyfBbZYpes7wnhbLM-5Xdr5' alt='linkedin'></img></a>
+                        <a href='https://github.com/mdimranraj' target='_blank'><img src='https://drive.google.com/uc?export=download&id=16shR8sum3xnPdJchaag8k5229tvUj5qn' alt='github'/></a>
+                        <a href='mailto:mdimranraj786@gmail.com' target='_blank'><img src='https://drive.google.com/uc?export=download&id=1oiAp5iqS67x17KAnaDO27uy8AINmu0z1' alt='mail'/></a>
 
                        
                     </div>
