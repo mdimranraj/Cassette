@@ -1,0 +1,22 @@
+li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+li div{
+    width: fit-content;
+}
+
+.history-table{
+    border: solid 1px grey;
+}
+.history-table td, th{
+    padding: 10px 20px;
+    border: solid 1px grey;
+}
+
+.table-container{
+    margin: 10vh auto;
+    min-height: 60vh;
+    width:fit-content;
+}

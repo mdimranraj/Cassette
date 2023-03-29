@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import records from "./records";
 import '../styles/card.css';
 import '../styles/video.css';
 
@@ -6,6 +7,20 @@ const Card = (props) => {
 
     function handleClick(event){
         props.onDelete(props.id);
+    }
+
+    const [playedAt, setPlayedAt] = useState("");
+
+    function handlePlay(event) {
+        // Get the current date and time
+        const now = new Date();
+        const playedAt = now.toLocaleString();
+    
+        // Update the state with the playedAt time
+        setPlayedAt(playedAt);
+
+        records.push({t:props.title,l:props.link,time:playedAt});
+        console.log(records);
     }
    
 
@@ -26,8 +41,14 @@ const Card = (props) => {
                     </div>
                     
                     <div className='btn-group'>
-                        <button type='button' className="play"   data-bs-toggle="modal" data-bs-target={`#${modalId}`}>Play</button>
+                        <button type='button' className="play"   data-bs-toggle="modal" data-bs-target={`#${modalId}`} onClick={handlePlay}>Play</button>
                     </div>
+
+                    {playedAt && (
+                    <div className="played-at">
+                        Played at: {playedAt}
+                    </div>
+                )}
 
                 </div>
             </div>
