@@ -44,12 +44,6 @@ const Card = (props) => {
                         <button type='button' className="play"   data-bs-toggle="modal" data-bs-target={`#${modalId}`} onClick={handlePlay}>Play</button>
                     </div>
 
-                    {playedAt && (
-                    <div className="played-at">
-                        Played at: {playedAt}
-                    </div>
-                )}
-
                 </div>
             </div>
 

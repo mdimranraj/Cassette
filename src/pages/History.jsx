@@ -5,7 +5,7 @@ import "../styles/history.css";
 const History = () => {
   return (
     <div className='table-container'>
-
+      <h2>Recently Played</h2>
     <table className="history-table">
       <tr>
         <th>Title</th> <th>Link</th> <th>Played On</th>

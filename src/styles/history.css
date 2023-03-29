@@ -12,6 +12,7 @@ li div{
 }
 .history-table td, th{
     padding: 10px 20px;
+    min-width: 300px;
     border: solid 1px grey;
 }
 
@@ -20,3 +21,6 @@ li div{
     min-height: 60vh;
     width:fit-content;
 }
+.table-container h2{
+    color: grey
+}   
