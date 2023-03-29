@@ -6,18 +6,21 @@ const History = () => {
   return (
     <div className='table-container'>
       <h2>Recently Played</h2>
-    <table className="history-table">
-      <tr>
-        <th>Title</th> <th>Link</th> <th>Played On</th>
-      </tr>
-      {records.map((record) => {
-        return <tr>
-          <td>{record.t}</td>
-          <td>{record.l}</td>
-          <td>{record.time}</td>
-        </tr>
-      })}
-    </table>
+      <div className="table-scroll">
+          <table className="history-table">
+          <tr>
+            <th>Title</th> <th>Link</th> <th>Played On</th>
+          </tr>
+          {records.map((record) => {
+            return <tr>
+              <td>{record.t}</td>
+              <td>{record.l}</td>
+              <td>{record.time}</td>
+            </tr>
+          })}
+          </table>
+      </div>
+    
 
 
 

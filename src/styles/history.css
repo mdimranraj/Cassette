@@ -20,6 +20,10 @@ li div{
     margin: 10vh auto;
     min-height: 60vh;
     width:fit-content;
+    /* overflow-x: auto; */
+}
+.table-scroll{
+    overflow-x: auto;;
 }
 .table-container h2{
     color: grey
