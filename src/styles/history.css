@@ -9,18 +9,17 @@ li div{
 
 .history-table{
     border: solid 1px grey;
+    margin: 0 auto;
 }
 .history-table td, th{
     padding: 10px 20px;
-    /* min-width: 300px; */
     border: solid 1px grey;
 }
 
 .table-container{
     margin: 10vh auto;
     min-height: 60vh;
-    width:fit-content;
-    /* overflow-x: auto; */
+    width:90%;
 }
 .table-scroll{
     overflow-x: auto;;
