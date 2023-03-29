@@ -4,7 +4,7 @@ import "../styles/developer.css";
 const Developer = () => {
   return (
     <div className='green-team-container'>
-            <h2>The Green Team</h2>
+            <h2>Contact & Details</h2>
             <div className='team-container-flex'>
                 <div className='team-member'>
                     <div className="team-member-left-flex">
@@ -12,7 +12,7 @@ const Developer = () => {
                     <div className='member-details'>
                         <h4>Md Imran Raj</h4>
                         <h6>( Full Stack Web and Android Developer, UI/UX Developer )</h6>
-                        <h5>Role in team : <span className='role'>Lead Developer, Frontend and Backend Manager </span></h5>
+                        
                     </div>
                     </div>
                     <div className='social-details'>

@@ -22,11 +22,14 @@ const CreateBucket = (props) => {
         })
         event.preventDefault();
     }
+    function editName(newName){
+        setValue({title: newName})
+    }
     
 
   return (
     <form className='create-bucket-form'>
-        <input onChange={handleChange} type='text' name='title' value={value.title} placeholder='title'></input>
+        <input onChange={handleChange} type='text' name='title' value={value.title} placeholder='Enter Bucket name'></input>
         <button onClick={submitBucket} type="button" class="btn btn-success">Create Bucket</button>
 
         

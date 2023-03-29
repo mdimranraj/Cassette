@@ -1,11 +1,13 @@
-
+@import url(http://fonts.googleapis.com/earlyaccess/khyay.css);
 
 .navbar-right-items{
     width: fit-content;
     margin-left: auto ;
 }
-.navbar-right-items li{
-    
+.navbar-brand{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color :#8dd4a3 !important;
 }
 .navbar-light .navbar-nav .nav-link {
     color: rgb(0 0 0);
@@ -17,10 +19,9 @@
 
 .navbar {
     padding: 0;
-    margin: 0 2vw;
     height: 10vh;
 }
 .container-fluid {
-    background-color: #F5FFF8;
-    padding: 0;
+    background-color: #e7f2eb !important;
+    padding: 10px 20px;
 }

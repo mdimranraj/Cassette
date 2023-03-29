@@ -1,4 +1,10 @@
+h2{
+    color:rgb(48, 52, 52);
+    margin-bottom:20px;
+}
 .home-page{
+    margin-top: 50px;
+    margin-bottom: 50px;
     min-height: 60vh;
 }
 .top-buttons{

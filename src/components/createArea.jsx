@@ -28,8 +28,9 @@ const CreateArea = (props) => {
 
   return (
     <form className='create-form'>
-        <input onChange={handleChange} type='text' name='title' value={value.title} placeholder='title'></input>
-        <input onChange={handleChange} type='url' name='link' value={value.link} placeholder='video/audio link'></input>
+        <h4>Add Files</h4>
+        <input onChange={handleChange} type='text' name='title' value={value.title} placeholder='File Name' ></input>
+        <input onChange={handleChange} type='url' name='link' value={value.link} placeholder='Embedded video link'></input>
         <img onClick={submitCard} src="plus.png" className="plus" alt="plus" />
     </form>
   )

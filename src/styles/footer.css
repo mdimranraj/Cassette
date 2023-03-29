@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/khyay.css);
+
 h4{
     font-size: 1.2rem;
 }
@@ -9,10 +11,11 @@ h4{
     font-size: 1.2rem;
     line-height: 39px;
     color: rgba(0, 0, 0, 0.58);
-  
+    margin: 0;
     padding: 1rem;
-    background-color: transparent;
+    background-color: #e7f2eb !important;
     height: fit-content;
+    max-width: 100%;
     
   }
   
@@ -20,8 +23,8 @@ h4{
       color: rgba(0, 0, 0, 0.58);
       text-decoration: none;
   } 
-  hr {
+  /* hr {
       width: 95%;
       border: 1.25px solid rgba(0, 0, 0, 0.2);
-  }
+  } */
   

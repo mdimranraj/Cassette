@@ -23,6 +23,9 @@ const HomePage = () => {
   function deleteAllBuckets(){
     setBuckets([]);
   }
+  function editBucketName(newName){
+    
+  }
 
 
   return (
@@ -35,7 +38,7 @@ const HomePage = () => {
     
 
     {buckets.map((bucketItem, index) => {
-        return <Bucket key={index} id={index} title={bucketItem.title} onDelete={deleteBucket} />
+        return <Bucket key={index} id={index} title={bucketItem.title} onDelete={deleteBucket} editName={editBucketName}/>
     })}
     </div>
     

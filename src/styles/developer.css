@@ -50,6 +50,7 @@
 .team-member-left-flex{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
    
 }
 
@@ -63,6 +64,7 @@
 
 .member-details{
     margin: 20px;
+    
 }
 
 .role{

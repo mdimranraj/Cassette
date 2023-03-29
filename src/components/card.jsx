@@ -4,16 +4,10 @@ import '../styles/video.css';
 
 const Card = (props) => {
 
-    const [newLink, setNewLink] = useState("");
-    function handlePlay(){
-        console.log(newLink);
-        setNewLink(props.link);
-        console.log(newLink);
-    }
-
     function handleClick(event){
         props.onDelete(props.id);
     }
+   
 
     const modalId = "exampleModal" + props.id;
 
@@ -23,15 +17,16 @@ const Card = (props) => {
                 <img src="video.png" className="card-img-top" alt="..." />
                 <div className="card-body">
                     <div className="card-title-group">
-                        <h5 className="card-title">{props.title}</h5>
-                        <img src="pencil.png" className="pencil" alt="..." />
+                        <h5 className="card-title" >{props.title || "Video" + props.id }</h5>
+                        <div className='btn-group-img'>      
+                            <img src="pencil.png" className="pencil" alt="..." />
+                            <img onClick={handleClick} src="delete.png" className="delete" alt="..." />
+                        </div>
+                        
                     </div>
                     
                     <div className='btn-group'>
-                        <button onClick={handlePlay} type='button' className="play btn btn-outline-success "   data-bs-toggle="modal" data-bs-target={`#${modalId}`}>Play</button>
-                        <div className='btn-group-img'>      
-                            <img onClick={handleClick} src="delete.png" className="delete" alt="..." />
-                        </div>
+                        <button type='button' className="play"   data-bs-toggle="modal" data-bs-target={`#${modalId}`}>Play</button>
                     </div>
 
                 </div>
