@@ -1,10 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import CreateArea from './createArea';
 import "../styles/bucket.css";
 import Card from "../components/card";
 
 
 const Bucket = (props) => {
+  const [cards, setCards] = useState([]);
+
+        useEffect(() => {
+          const storedCards = JSON.parse(localStorage.getItem(`bucket-${props.id}`) || '[]');
+          setCards(storedCards);
+      }, [props.id]);
+
+      useEffect(() => {
+          localStorage.setItem(`bucket-${props.id}`, JSON.stringify(cards));
+      }, [props.id, cards]);
 
     //   for deleting the bucket
 
@@ -12,14 +22,15 @@ const Bucket = (props) => {
         props.onDelete(props.id);
     }
 
-    // for deleting the card
-    const [cards, setCards] = useState([]);
+    
+    
 
     function addCard(newCard){
       setCards(prevCards => {
         return [...prevCards, newCard];
       })
     }
+    // for deleting the card
     function deleteCard(id){
       setCards(prevCards => {
         return  prevCards.filter((cardItem, index)=>{

@@ -19,8 +19,6 @@ const HomePage = () => {
   }, [buckets]);
 
 
-
-
   function addBucket(newBucket){
     setBuckets(prevBuckets => {
       return [...prevBuckets, newBucket];
