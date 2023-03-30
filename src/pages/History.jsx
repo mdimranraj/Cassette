@@ -24,7 +24,7 @@ const History = () => {
 
 
 
-      
+      <h6>*Note : History will be deleted when you refresh the Page. But your cards and Buckets are stored in your local Storage. </h6>
     </div>
   )
 }
