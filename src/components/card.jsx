@@ -8,7 +8,7 @@ const Card = (props) => {
     const modalId = props.modalId || "exampleModal";
 
     function handleClick(event){
-        props.onDelete(props.id);
+        props.onDelete(props.id, props.bucket);
     }
  
     function closeVideo(){

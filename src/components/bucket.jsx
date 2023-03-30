@@ -31,9 +31,10 @@ const Bucket = (props) => {
       })
     }
     // for deleting the card
-    function deleteCard(id){
+    function deleteCard(id, currBucket){
       setCards(prevCards => {
         return  prevCards.filter((cardItem, index)=>{
+          index  = String(currBucket) + index;
           return index !== id;
         })
       })
@@ -63,7 +64,7 @@ const Bucket = (props) => {
         <div className='bucket-container-flex'>
             <div className='left-side'>
                     {cards.map((cardItem, index) => {
-                        return <Card key={index} id={index} title={cardItem.title} link={cardItem.link} onDelete={deleteCard} modalId={"exampleModal" + props.id + index}/>
+                        return <Card key={index} id={String(props.id) + index} bucket={props.id} title={cardItem.title} link={cardItem.link} onDelete={deleteCard} modalId={"exampleModal" + props.id + index}/>
                     })}
             
             </div>

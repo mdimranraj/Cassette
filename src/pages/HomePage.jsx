@@ -31,6 +31,17 @@ const HomePage = () => {
       })
     })
   }
+  // function deleteBucket(id) {
+  //   setBuckets(prevBuckets => {
+  //     const updatedBuckets = prevBuckets.filter((bucketItem, index) => index !== id);
+  //     localStorage.setItem('buckets', JSON.stringify(updatedBuckets)); // clear the bucket from localStorage
+  //     return updatedBuckets;
+  //   });
+  //   const storedCards = JSON.parse(localStorage.getItem(`cards_${id}`));
+  //   if (storedCards) {
+  //     localStorage.removeItem(`cards_${id}`); // clear the cards from localStorage
+  //   }
+  // }
 
   function deleteAllBuckets(){
     setBuckets([]);
