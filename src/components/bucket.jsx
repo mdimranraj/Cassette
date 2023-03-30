@@ -52,7 +52,7 @@ const Bucket = (props) => {
         <div className='bucket-container-flex'>
             <div className='left-side'>
                     {cards.map((cardItem, index) => {
-                        return <Card key={index} id={index} title={cardItem.title} link={cardItem.link} onDelete={deleteCard} modalId={"exampleModal" + index}/>
+                        return <Card key={index} id={index} title={cardItem.title} link={cardItem.link} onDelete={deleteCard} modalId={"exampleModal" + props.id + index}/>
                     })}
             
             </div>

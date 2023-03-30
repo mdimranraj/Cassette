@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Bucket from '../components/bucket';
 import "../styles/homePage.css";
 import CreateBucket from '../components/createBucket';
@@ -6,6 +6,20 @@ import CreateBucket from '../components/createBucket';
 const HomePage = () => {
 
   const [buckets, setBuckets] = useState([]);
+
+  useEffect(() => {
+    const storedBuckets = JSON.parse(localStorage.getItem('buckets'));
+    if (storedBuckets) {
+      setBuckets(storedBuckets);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('buckets', JSON.stringify(buckets));
+  }, [buckets]);
+
+
+
 
   function addBucket(newBucket){
     setBuckets(prevBuckets => {

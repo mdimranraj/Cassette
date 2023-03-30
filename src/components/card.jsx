@@ -1,4 +1,4 @@
-import React, { useState , useRef } from 'react'
+import React, { useState} from 'react'
 import records from "./records";
 import '../styles/card.css';
 import '../styles/video.css';
